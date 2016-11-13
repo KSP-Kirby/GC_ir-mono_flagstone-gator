@@ -4,8 +4,13 @@
 % uses right image as reference
 
 
-addpath('C:\Users\Richard\Documents\MATLAB\flow-code-matlab')     % this is flow to color
-addpath('C:\Users\Richard\Documents\MATLAB\gco-v3.0\matlab')      % Graph Cuts
+if exist('C:\Users\Richard\Documents\MATLAB', 'dir')
+    addpath('C:\Users\Richard\Documents\MATLAB\flow-code-matlab')     % this is flow to color
+    addpath('C:\Users\Richard\Documents\MATLAB\gco-v3.0\matlab')      % Graph Cuts
+else
+    addpath('C:\Users\richa\Documents\MATLAB\flow-code-matlab')     % this is flow to color
+    addpath('C:\Users\richa\Documents\MATLAB\gco-v3.0\matlab')      % Graph Cuts
+end
 load('flow_flagstone_gator.mat')
 imageSet = 1;
 
